@@ -29,6 +29,7 @@ function TempleliteListSection({ userSearchInput }: any) {
         } else {
             setTempletelist(templete)
             
+            
         }
     }, [userSearchInput])
 
