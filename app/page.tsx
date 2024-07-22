@@ -24,25 +24,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <style jsx>{`
-        @keyframes gradientAnimation {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-
-        .animated-gradient {
-          background: linear-gradient(270deg, #5f92ff, #b91969, #886856);
-          background-size: 800% 800%;
-          animation: gradientAnimation 15s ease infinite;
-        }
-      `}</style>
+    
     </>
   );
 }
