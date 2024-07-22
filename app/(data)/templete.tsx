@@ -1,4 +1,118 @@
 export default  [
+    
+ 
+    {
+        name: 'Math Problem Solver',
+        desc: 'AI Model to Solve any Math Complex Problems in Maths',
+        icon:'https://cdn-icons-png.flaticon.com/128/2436/2436632.png',
+        category: 'maths',
+       
+        slug: 'maths-problmes',
+        aiPrompt: 'Depends on user Math Problems Questions solve a  give Problem output in  in rich text editor format in code block ',
+        form: [
+            {
+                label: 'Enter description of your Math Problem Question',
+                field: 'textarea',
+                name: 'MathDesscripton',
+                required:true
+            },
+           
+        ]
+    },
+
+  
+   
+    {
+        name: 'Chatbot robot',
+        desc: 'An AI-powered chatbot tool that can interact with users, answer questions, and provide information based on your input.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/6819/6819650.png',
+        category: 'Chatbot',
+        slug: 'chatbot',
+        aiPrompt: 'Engage in a conversation with the user, answer questions, and provide information based on user input. and output in the heading 3 and bold text ',
+        form: [
+            {
+                label: 'Enter your question or topic',
+                field: 'textarea',
+                name: 'userInput',
+                required: true
+            },
+        ]
+    },
+   
+   
+
+    {
+        name: 'Chemistry Teacher',
+        desc: 'Ai model To Teach the Chemistry In Ai and Solve Some Complex Chemical Equations',
+        icon:'https://cdn-icons-png.flaticon.com/128/3655/3655580.png',
+        category: 'chemistry',
+       
+        slug: 'chemistry',
+        aiPrompt: 'Depends on user chemistry Topics Teach the Chemistry from The Given Input and output in  in rich text editor. ',
+        form: [
+            {
+                label: 'Entre a Topic from the Chemistry',
+                field: 'textarea',
+                name: 'ChemistryDesscripton',
+                required:true
+            },
+           
+        ]
+    },
+
+    {
+        name: 'English Grammer Check',
+        desc: 'AI Model to Correct your english grammer by providing the text',
+        icon:'https://cdn-icons-png.flaticon.com/128/12596/12596700.png',
+        category: 'english',
+       
+        slug: 'english-grammer-checker',
+        aiPrompt: 'Rewrite the inputText by correcting the grammer and give output in  in rich text editor format',
+        form: [
+            {
+                label: 'Enter text to correct the grammer',
+                field: 'input',
+                name: 'inputText',
+                required:true
+            },
+           
+        ]
+    },
+    {
+        name: 'Text Improver',
+        desc: 'This handy tool refines your writing, eliminating errors and redundancies for a clear, readable result. It also offers a comprehensive tone analysis and suggests better word choices.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/1686/1686815.png',
+        category: 'Writing Assistant',
+        slug: 'text-improver',
+        aiPrompt: 'Given textToImprove, Rewrite text without any grammar mistake and professionally in rich text editor format',
+        form: [
+            {
+                label: 'Enter text that you want to re-write or improve',
+                field: 'textarea',
+                name: 'textToImprove'
+            }
+        ]
+    },
+
+    {
+        name: 'Write Code',
+        desc: 'AI Model to generate programming code in any language',
+        icon:'https://cdn-icons-png.flaticon.com/128/6062/6062646.png',
+        category: 'Coding',
+       
+        slug: 'write-code',
+        aiPrompt: 'Depends on user codeDescription write a code and give output in  in rich text editor format in code block ',
+        form: [
+            {
+                label: 'Enter description of code you want along with Programming Lang',
+                field: 'textarea',
+                name: 'codeDesscripton',
+                required:true
+            },
+           
+        ]
+    },
+
     {
         name:'Blog Title',
         desc:'An AI tool that generate blog title depends on yout blog information',
@@ -58,28 +172,7 @@ export default  [
             },
         ]
     },
-    {
-        name: 'Youtube SEO Title',
-        desc: 'An AI tool that serves as your personal blog post title writer, generating catchy and viral-worthy titles in your chosen language.',
-        category: 'Youtube Tools',
-        icon: 'https://cdn-icons-png.flaticon.com/128/402/402075.png',
-        slug: 'youtube-seo-title',
-        aiPrompt: 'Give me Best SEO optimized high ranked 5 title ideas bullet wise only bases on keywords and outline and give me result in HTML tags format',
-        form: [
-            {
-                label: 'Enter your youtube video topic keyowords',
-                field: 'input',
-                name: 'keywords',
-                required:true
-            },
-            {
-                label: 'Enter youtube description Outline here',
-                field: 'textarea',
-                name: 'outline'
-            }
-        ]
-
-    },
+    
     {
 
         name: 'Youtube Description',
@@ -142,21 +235,7 @@ export default  [
             }
         ]
     },
-    {
-        name: 'Text Improver',
-        desc: 'This handy tool refines your writing, eliminating errors and redundancies for a clear, readable result. It also offers a comprehensive tone analysis and suggests better word choices.',
-        icon: 'https://cdn-icons-png.flaticon.com/128/1686/1686815.png',
-        category: 'Writing Assistant',
-        slug: 'text-improver',
-        aiPrompt: 'Given textToImprove, Rewrite text without any grammar mistake and professionally in rich text editor format',
-        form: [
-            {
-                label: 'Enter text that you want to re-write or improve',
-                field: 'textarea',
-                name: 'textToImprove'
-            }
-        ]
-    },
+
     {
         name: 'Add Emojis to Text',
         desc: 'An AI tool that serves as your personal blog post title writer, generating catchy and viral-worthy titles in your chosen language.',
@@ -227,42 +306,8 @@ export default  [
            
         ]
     },
-    {
-        name: 'English Grammer Check',
-        desc: 'AI Model to Correct your english grammer by providing the text',
-        icon:'https://cdn-icons-png.flaticon.com/128/12596/12596700.png',
-        category: 'english',
-       
-        slug: 'english-grammer-checker',
-        aiPrompt: 'Rewrite the inputText by correcting the grammer and give output in  in rich text editor format',
-        form: [
-            {
-                label: 'Enter text to correct the grammer',
-                field: 'input',
-                name: 'inputText',
-                required:true
-            },
-           
-        ]
-    },
-    {
-        name: 'Write Code',
-        desc: 'AI Model to generate programming code in any language',
-        icon:'https://cdn-icons-png.flaticon.com/128/6062/6062646.png',
-        category: 'Coding',
-       
-        slug: 'write-code',
-        aiPrompt: 'Depends on user codeDescription write a code and give output in  in rich text editor format in code block ',
-        form: [
-            {
-                label: 'Enter description of code you want along with Programming Lang',
-                field: 'textarea',
-                name: 'codeDesscripton',
-                required:true
-            },
-           
-        ]
-    },
+   
+   
     {
         name: 'Explain Code',
         desc: 'AI Model to explain programming code in any language',
