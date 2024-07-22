@@ -42,6 +42,15 @@ function TempleliteListSection({ userSearchInput }: any) {
                     ))
                 }
             </div>
+
+           <div className='text-center m-9 p-10  bg-slate-100 text-black shadow-xl '>
+            <div>
+    <h1 className='font-bold text-3xl '>For <span className='font-mono text-yellow-900 shadow-inner'>Image Generation</span></h1>
+    <br /> 
+    <Button variant={"destructive"}> <a href='https://sriram-65.github.io/imageGen/' >Get Start Now</a> </Button>
+    
+  </div>
+            </div>
         </>
     )
 }
