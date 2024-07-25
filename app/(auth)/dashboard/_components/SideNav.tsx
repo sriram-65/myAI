@@ -16,7 +16,7 @@ function SideNav() {
         pathName:"/dashboard/history"
       },
       {
-        name:"Pricings",
+        name:"My Projects",
         icon:WalletCards,
         pathName:"/dashboard/billing"
       },
