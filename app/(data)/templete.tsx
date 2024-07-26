@@ -20,6 +20,24 @@ export default  [
         ]
     },
 
+    {
+    name: 'Physics Problem Solver',
+    desc: 'AI Model to Solve any Complex Problems in Physics',
+    icon: 'https://cdn-icons-png.flaticon.com/128/2497/2497631.png',
+    category: 'physics',
+    slug: 'physics-problems',
+    aiPrompt: 'Depends on user Physics Problems Questions solve a give Problem output in rich text editor format in code block',
+    form: [
+        {
+            label: 'Enter description of your Physics Problem Question',
+            field: 'textarea',
+            name: 'PhysicsDescription',
+            required: true
+        }
+    ]
+}
+
+
   
    
     {
