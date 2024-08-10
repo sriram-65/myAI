@@ -21,24 +21,21 @@ export default  [
     },
 
     {
-    name: 'Physics Problem Solver',
-    desc: 'AI Model to Solve any Complex Problems in Physics',
-    icon: 'https://cdn-icons-png.flaticon.com/128/2497/2497631.png',
-    category: 'physics',
-    slug: 'physics-problems',
-    aiPrompt: 'Depends on user Physics Problems Questions solve a give Problem output in rich text editor format in code block',
-    form: [
-        {
-            label: 'Enter description of your Physics Problem Question',
-            field: 'textarea',
-            name: 'PhysicsDescription',
-            required: true
-        }
-    ]
-}
-
-
-  
+        name: 'Physics Problem Solver',
+        desc: 'AI Model to Solve any Complex Problems in Physics',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2497/2497631.png',
+        category: 'physics',
+        slug: 'physics-problems',
+        aiPrompt: 'Depends on user Physics Problems Questions solve a give Problem output in rich text editor format in code block',
+        form: [
+            {
+                label: 'Enter description of your Physics Problem Question',
+                field: 'textarea',
+                name: 'PhysicsDescription',
+                required: true
+            }
+        ]
+    },
    
     {
         name: 'Chatbot robot',
@@ -89,11 +86,242 @@ export default  [
         form: [
             {
                 label: 'Enter text to correct the grammer',
-                field: 'textarea',
+                field: 'input',
                 name: 'inputText',
                 required:true
             },
            
+        ]
+    },
+
+    {
+        name: 'Recipe Generator',
+        desc: 'AI Model to generate unique recipes based on ingredients you have.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2921/2921820.png',
+        category: 'Cooking',
+        slug: 'recipe-generator',
+        aiPrompt: 'Based on user ingredients and cuisine preference, generate a unique recipe with instructions in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the ingredients you have',
+                field: 'textarea',
+                name: 'ingredients',
+                required: true
+            },
+            {
+                label: 'Preferred cuisine (optional)',
+                field: 'input',
+                name: 'cuisine'
+            }
+        ]
+    },
+
+    {
+        name: 'Travel Itinerary Planner',
+        desc: 'An AI tool to plan your travel itinerary based on your destination and preferences.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2533/2533206.png',
+        category: 'Travel',
+        slug: 'travel-itinerary-planner',
+        aiPrompt: 'Based on the user destination and preferences, generate a travel itinerary in rich text editor format.',
+        form: [
+            {
+                label: 'Enter your travel destination',
+                field: 'input',
+                name: 'destination',
+                required: true
+            },
+            {
+                label: 'Enter your travel preferences (e.g., adventure, relaxation)',
+                field: 'textarea',
+                name: 'preferences'
+            }
+        ]
+    },
+
+    {
+        name: 'Social Media Post Generator',
+        desc: 'An AI tool to create engaging social media posts based on your provided content.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/145/145807.png',
+        category: 'Social Media',
+        slug: 'social-media-post-generator',
+        aiPrompt: 'Generate an engaging social media post based on the provided content, optimized for the specified platform, in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the content or message for your post',
+                field: 'textarea',
+                name: 'content',
+                required: true
+            },
+            {
+                label: 'Specify the social media platform (e.g., Facebook, Twitter)',
+                field: 'input',
+                name: 'platform',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Resume Builder',
+        desc: 'An AI-powered resume builder that helps create a professional resume based on your input.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/1087/1087815.png',
+        category: 'Career',
+        slug: 'resume-builder',
+        aiPrompt: 'Generate a professional resume based on user input in rich text editor format.',
+        form: [
+            {
+                label: 'Enter your full name',
+                field: 'input',
+                name: 'fullName',
+                required: true
+            },
+            {
+                label: 'Enter your work experience and skills',
+                field: 'textarea',
+                name: 'experienceSkills',
+                required: true
+            },
+            {
+                label: 'Enter your education details',
+                field: 'textarea',
+                name: 'education',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Email Draft Assistant',
+        desc: 'An AI tool to draft professional emails based on your input.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/732/732200.png',
+        category: 'Writing Assistant',
+        slug: 'email-draft-assistant',
+        aiPrompt: 'Based on user input, draft a professional email with a clear structure and appropriate tone in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the email subject',
+                field: 'input',
+                name: 'subject',
+                required: true
+            },
+            {
+                label: 'Enter the email content or message',
+                field: 'textarea',
+                name: 'message',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'SEO Keyword Generator',
+        desc: 'An AI tool to generate SEO keywords for your content based on the topic.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/3257/3257305.png',
+        category: 'SEO',
+        slug: 'seo-keyword-generator',
+        aiPrompt: 'Generate a list of SEO keywords based on the provided content topic in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the content topic',
+                field: 'input',
+                name: 'topic',
+                required: true
+            },
+            {
+                label: 'Specify the target audience or region (optional)',
+                field: 'input',
+                name: 'audience'
+            }
+        ]
+    },
+
+    {
+        name: 'Motivational Quote Generator',
+        desc: 'An AI tool to generate motivational quotes based on a specific theme or keyword.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/3602/3602123.png',
+        category: 'Motivation',
+        slug: 'motivational-quote-generator',
+        aiPrompt: 'Generate a motivational quote based on the provided theme or keyword in rich text editor format.',
+        form: [
+            {
+                label: 'Enter a theme or keyword for the quote',
+                field: 'input',
+                name: 'theme',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Daily Planner',
+        desc: 'An AI tool to create a daily schedule based on your tasks and priorities.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/3062/3062634.png',
+        category: 'Productivity',
+        slug: 'daily-planner',
+        aiPrompt: 'Based on user tasks and priorities, generate a detailed daily schedule in rich text editor format.',
+        form: [
+            {
+                label: 'Enter your tasks for the day',
+                field: 'textarea',
+                name: 'tasks',
+                required: true
+            },
+            {
+                label: 'Enter your top priorities',
+                field: 'textarea',
+                name: 'priorities'
+            }
+        ]
+    },
+
+    {
+        name: 'Language Translator',
+        desc: 'AI tool to translate text from one language to another with accuracy and context.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/4764/4764847.png',
+        category: 'Translation',
+        slug: 'language-translator',
+        aiPrompt: 'Translate the provided text from sourceLanguage to targetLanguage and ensure contextual accuracy in rich text editor format.',
+        form: [
+            {
+                label: 'Enter text to translate',
+                field: 'textarea',
+                name: 'textToTranslate',
+                required: true
+            },
+            {
+                label: 'Source Language (e.g., English)',
+                field: 'input',
+                name: 'sourceLanguage',
+                required: true
+            },
+            {
+                label: 'Target Language (e.g., Spanish)',
+                field: 'input',
+                name: 'targetLanguage',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Customer Support Assistant',
+        desc: 'An AI tool that helps generate customer support responses based on the customer query.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2718/2718232.png',
+        category: 'Customer Support',
+        slug: 'customer-support-assistant',
+        aiPrompt: 'Generate a customer support response based on the provided query and context in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the customer query',
+                field: 'textarea',
+                name: 'customerQuery',
+                required: true
+            },
+            {
+                label: 'Provide additional context (optional)',
+                field: 'textarea',
+                name: 'context'
+            }
         ]
     },
     {
@@ -411,6 +639,308 @@ export default  [
         ]
     },
 
+    {
+        name: 'Workout Plan Generator',
+        desc: 'AI tool to create a customized workout plan based on your fitness goals.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2659/2659367.png',
+        category: 'Fitness',
+        slug: 'workout-plan-generator',
+        aiPrompt: 'Generate a personalized workout plan based on user fitness goals and experience level in rich text editor format.',
+        form: [
+            {
+                label: 'Enter your fitness goals (e.g., weight loss, muscle gain)',
+                field: 'textarea',
+                name: 'fitnessGoals',
+                required: true
+            },
+            {
+                label: 'Enter your experience level (e.g., beginner, intermediate)',
+                field: 'input',
+                name: 'experienceLevel',
+                required: true
+            }
+        ]
+    },
 
+    {
+        name: 'Meal Plan Generator',
+        desc: 'AI tool to create a meal plan based on your dietary preferences and goals.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/857/857681.png',
+        category: 'Nutrition',
+        slug: 'meal-plan-generator',
+        aiPrompt: 'Generate a personalized meal plan based on user dietary preferences and goals in rich text editor format.',
+        form: [
+            {
+                label: 'Enter your dietary preferences (e.g., vegan, keto)',
+                field: 'textarea',
+                name: 'dietaryPreferences',
+                required: true
+            },
+            {
+                label: 'Enter your dietary goals (e.g., weight loss, muscle gain)',
+                field: 'input',
+                name: 'dietaryGoals',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Story Plot Generator',
+        desc: 'AI tool to generate creative story plots based on a given genre and theme.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/862/862097.png',
+        category: 'Writing Assistant',
+        slug: 'story-plot-generator',
+        aiPrompt: 'Generate a unique story plot based on user provided genre and theme in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the genre (e.g., horror, romance)',
+                field: 'input',
+                name: 'genre',
+                required: true
+            },
+            {
+                label: 'Enter the theme or setting',
+                field: 'textarea',
+                name: 'theme',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Personal Finance Planner',
+        desc: 'AI tool to help you plan and manage your personal finances effectively.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/1170/1170678.png',
+        category: 'Finance',
+        slug: 'personal-finance-planner',
+        aiPrompt: 'Generate a personal finance plan based on user income, expenses, and financial goals in rich text editor format.',
+        form: [
+            {
+                label: 'Enter your monthly income',
+                field: 'input',
+                name: 'income',
+                required: true
+            },
+            {
+                label: 'Enter your monthly expenses',
+                field: 'textarea',
+                name: 'expenses',
+                required: true
+            },
+            {
+                label: 'Enter your financial goals (e.g., saving, investing)',
+                field: 'textarea',
+                name: 'financialGoals',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Presentation Slide Generator',
+        desc: 'AI tool to generate presentation slides based on the provided topic and content.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2421/2421820.png',
+        category: 'Productivity',
+        slug: 'presentation-slide-generator',
+        aiPrompt: 'Generate a presentation slide outline based on the provided topic and content in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the presentation topic',
+                field: 'input',
+                name: 'topic',
+                required: true
+            },
+            {
+                label: 'Enter the key points or content for the slides',
+                field: 'textarea',
+                name: 'content',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Poetry Generator',
+        desc: 'AI tool to create original poems based on a given theme or keywords.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/3143/3143640.png',
+        category: 'Creativity',
+        slug: 'poetry-generator',
+        aiPrompt: 'Generate a poem based on the provided theme or keywords in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the theme or keywords for the poem',
+                field: 'textarea',
+                name: 'keywords',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Business Name Generator',
+        desc: 'AI tool to generate unique and catchy business names based on the type of business.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2791/2791444.png',
+        category: 'Business',
+        slug: 'business-name-generator',
+        aiPrompt: 'Generate a list of business names based on user provided business type and description in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the type of business',
+                field: 'input',
+                name: 'businessType',
+                required: true
+            },
+            {
+                label: 'Enter a brief description of your business',
+                field: 'textarea',
+                name: 'description',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Event Invitation Generator',
+        desc: 'AI tool to create event invitations with engaging content and design suggestions.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/896/896573.png',
+        category: 'Events',
+        slug: 'event-invitation-generator',
+        aiPrompt: 'Generate an event invitation based on user provided event details and preferences in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the event name',
+                field: 'input',
+                name: 'eventName',
+                required: true
+            },
+            {
+                label: 'Enter the event date and time',
+                field: 'input',
+                name: 'eventDateTime',
+                required: true
+            },
+            {
+                label: 'Enter the event details or message',
+                field: 'textarea',
+                name: 'eventDetails',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Wedding Vows Generator',
+        desc: 'AI tool to help you write personalized and heartfelt wedding vows.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2765/2765661.png',
+        category: 'Writing Assistant',
+        slug: 'wedding-vows-generator',
+        aiPrompt: 'Generate wedding vows based on user provided details and relationship background in rich text editor format.',
+        form: [
+            {
+                label: 'Enter details about your relationship (e.g., how you met, shared experiences)',
+                field: 'textarea',
+                name: 'relationshipDetails',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Book Summary Generator',
+        desc: 'AI tool to create concise and informative summaries of books.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/1089/1089976.png',
+        category: 'Reading',
+        slug: 'book-summary-generator',
+        aiPrompt: 'Generate a concise summary of the provided book title and author in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the book title',
+                field: 'input',
+                name: 'bookTitle',
+                required: true
+            },
+            {
+                label: 'Enter the author name',
+                field: 'input',
+                name: 'authorName',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Speech Writer',
+        desc: 'AI tool to help you write compelling speeches for any occasion.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/1024/1024955.png',
+        category: 'Writing Assistant',
+        slug: 'speech-writer',
+        aiPrompt: 'Generate a speech based on user provided occasion, audience, and key message in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the occasion (e.g., wedding, conference)',
+                field: 'input',
+                name: 'occasion',
+                required: true
+            },
+            {
+                label: 'Enter the key message or theme of the speech',
+                field: 'textarea',
+                name: 'keyMessage',
+                required: true
+            },
+            {
+                label: 'Enter details about the audience (optional)',
+                field: 'textarea',
+                name: 'audience'
+            }
+        ]
+    },
+
+    {
+        name: 'Gift Suggestion Tool',
+        desc: 'AI tool to suggest personalized gift ideas based on the recipient\'s interests.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/744/744927.png',
+        category: 'Shopping',
+        slug: 'gift-suggestion-tool',
+        aiPrompt: 'Generate personalized gift suggestions based on the recipient\'s interests and occasion in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the recipient\'s interests',
+                field: 'textarea',
+                name: 'interests',
+                required: true
+            },
+            {
+                label: 'Enter the occasion (e.g., birthday, anniversary)',
+                field: 'input',
+                name: 'occasion',
+                required: true
+            }
+        ]
+    },
+
+    {
+        name: 'Pet Name Generator',
+        desc: 'AI tool to generate cute and unique names for your pet based on their personality and species.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/616/616519.png',
+        category: 'Pets',
+        slug: 'pet-name-generator',
+        aiPrompt: 'Generate unique pet names based on the pet\'s personality and species in rich text editor format.',
+        form: [
+            {
+                label: 'Enter the pet species (e.g., dog, cat)',
+                field: 'input',
+                name: 'species',
+                required: true
+            },
+            {
+                label: 'Describe the pet\'s personality',
+                field: 'textarea',
+                name: 'personality',
+                required: true
+            }
+        ]
+    }
 
 ]
